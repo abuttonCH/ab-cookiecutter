@@ -1,6 +1,6 @@
 # ab-cookiecutter
 
-Cookiecutter template for projects. 
+Cookiecutter template for projects.
 
 
 ## TO DO
