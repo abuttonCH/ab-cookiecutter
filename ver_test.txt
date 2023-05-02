@@ -1,5 +1,5 @@
-version = "0.1.1"
+version = "0.1.2"
 
-0.1.1
+0.1.2
 
-"text and 0.1.1 text"
+"text and 0.1.2 text"
