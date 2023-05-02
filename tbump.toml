@@ -26,7 +26,7 @@ tag_template = "v{new_version}"
 # src = "..."
 
 [[file]]
-src = "test/__init__.py"
+src = "tests/__init__.py"
 
 [[file]]
 src = "ab_cookiecutter/__init__.py"
