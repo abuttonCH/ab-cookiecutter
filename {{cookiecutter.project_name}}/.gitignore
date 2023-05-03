@@ -1,6 +1,7 @@
 # Data and outputs
 outputs/
 data/
+private_data/
 
 # PyTorch model
 *.pth
