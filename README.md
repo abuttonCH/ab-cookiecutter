@@ -15,4 +15,5 @@ Add tbump to the base template repo | :white_check_mark:
 Create an ML repo (with MLFlow) | -
 Create an APP repo (with Streamlit.io) | -
 Create a production repo (with apache airflow) | -
+Add github hooks | -
 
