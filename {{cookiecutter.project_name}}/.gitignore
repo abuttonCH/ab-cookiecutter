@@ -3,6 +3,8 @@ outputs/
 data/
 private_data/
 
+tests/test_output/
+
 # PyTorch model
 *.pth
 
