@@ -11,5 +11,5 @@ def test_file():
     # create timestamped output filename
     output_filename = add_timestamp(f"{TEST_OUTPUT}/test.txt")
     # write output file to the test_output directory
-    open(output_filename,"w+") as f:
+    with open(output_filename,"w+") as f:
         f.write("example")
