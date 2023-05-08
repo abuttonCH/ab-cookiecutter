@@ -21,9 +21,9 @@ timestr = time.strftime("%Y/%m/%d")
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = {{cookiecutter.project_name}}
-copyright = f"{timestr}, "+{{cookiecutter.author_name}}
-author = {{cookiecutter.author_name}}
+project = '{{cookiecutter.project_name}}'
+copyright = f"{timestr}, "+'{{cookiecutter.author_name}}'
+author = '{{cookiecutter.author_name}}'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
