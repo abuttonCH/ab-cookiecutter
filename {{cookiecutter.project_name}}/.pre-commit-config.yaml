@@ -21,3 +21,24 @@ repos:
   rev: v0.782
   hooks:
     - id: mypy
+
+- repo: https://github.com/econchick/interrogate
+  rev: 1.5.0
+  hooks:
+    - id: interrogate
+      args: [--fail-under=80, --verbose]
+
+- repo: https://github.com/pycqa/pydocstyle
+  rev: 6.1.1
+  hooks:
+    - id: pydocstyle
+      args: ["--ignore==D107,D204,D407,D213,D212"]
+
+- repo: local
+  hooks:
+    - id: set_hooks # This should match the script file name
+      name: set-hooks
+      entry: 'sh set_hooks.sh'
+      types: [bash]
+      pass_filenames: false
+      language: system

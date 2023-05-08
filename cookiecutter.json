@@ -1,4 +1,5 @@
 {
 	"project_name":"default_name",
-	"description":"Project description"
+	"description":"Project description",
+	"author_name":"Alex Button"
 }

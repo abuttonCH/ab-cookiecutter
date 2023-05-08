@@ -1,0 +1,4 @@
+#!/bin/sh
+sphinx-apidoc -f -o docs/source {{cookiecutter.project_name}}/
+cd docs
+make html
