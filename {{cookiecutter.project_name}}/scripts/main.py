@@ -1,3 +1,5 @@
+"""Example main script."""
+
 import sys
 
 sys.path.append("../")

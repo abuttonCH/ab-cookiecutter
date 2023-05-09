@@ -32,13 +32,13 @@ repos:
   rev: 6.1.1
   hooks:
     - id: pydocstyle
-      args: ["--ignore==D107,D204,D407,D213,D212"]
+      args: ["--ignore=D107,D204,D407,D213,D212,D413,D406"]
 
 - repo: local
   hooks:
     - id: set_hooks # This should match the script file name
       name: set-hooks
-      entry: 'sh set_hooks.sh'
+      entry: 'sh .set_hooks.sh'
       types: [bash]
       pass_filenames: false
       language: system

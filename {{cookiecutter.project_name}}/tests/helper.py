@@ -8,11 +8,9 @@ import time
 def add_timestamp(input_str: str) -> str:
     """Add a timestamp to the end of a string.
 
-    Args:
-        input_str: The string to add the stamp to
+    :input_str: The string to add the stamp to
 
-    Returns:
-        The string with the timestamp added to the end.
+    :Returns: The string with the timestamp added to the end.
     """
     timestr = time.strftime("%Y%m%d-%H%M%S")
     if "." in input_str:
@@ -25,12 +23,10 @@ def add_timestamp(input_str: str) -> str:
 def list_files(dirname: str) -> List[str]:
     """List all files in a directory.
 
-    Args:
-        dirname: The name of the directory.
+    :dirname: The name of the directory.
 
-    Returns:
-        The filenames of the contents of the directory
-        as a python list.
+    :Returns: The filenames of the contents of the directory
+             as a python list.
     """
     cmdline_output = subprocess.check_output(["ls", dirname])
     dir_contents = cmdline_output.decode("utf-8").split()
