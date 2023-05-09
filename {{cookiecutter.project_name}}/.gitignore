@@ -1,9 +1,9 @@
 # Data and outputs
 outputs/
 data/
-private_data/
-
+private/
 tests/test_output/
+docs/build
 
 # PyTorch model
 *.pth
