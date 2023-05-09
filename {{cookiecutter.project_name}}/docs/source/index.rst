@@ -10,4 +10,4 @@ Contents
 --------
 
 .. toctree::
-   {{cookiecutter.project_name}}
+   modules
