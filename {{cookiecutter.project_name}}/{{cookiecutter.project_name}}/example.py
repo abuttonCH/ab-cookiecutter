@@ -6,7 +6,8 @@ def example_function() -> bool:
     This is an example function showing how code 
     in the package should be laid out.
 
-    :Returns: A bool statement.
+    Returns:
+        A bool statement.
     """
     return True
 
@@ -16,9 +17,11 @@ def example_check_sum(x:int,y:int)->int:
     Example function taking the sum of two 
     int variables.
 
-    :x: X variable
-    :y: Y variable
+    Args:
+        :x: X variable
+        :y: Y variable
 
-    :Returns: sum of the two variables (X+Y)
+    Returns:
+        sum of the two variables (X+Y)
     """
     return x+y

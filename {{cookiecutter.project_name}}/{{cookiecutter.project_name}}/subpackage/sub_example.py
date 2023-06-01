@@ -6,6 +6,7 @@ def sub_example_function() -> bool:
     This function shows how to write functions
     as a subpackage.
 
-    :Returns: A bool statement.
+    Returns:
+        A bool statement.
     """
     return True
