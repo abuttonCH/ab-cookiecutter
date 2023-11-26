@@ -10,12 +10,37 @@ ARGS=(hook-impl --config=.pre-commit-config.yaml --hook-type=pre-commit)
 HERE="$(cd "$(dirname "$0")" && pwd)"
 ARGS+=(--hook-dir "$HERE" -- "$@")
 
+#---build the python package from the repo---#
+# add timestamp
+TIMESTAMP=$(date +"%Y_%m_%_d-%H:%M:%S")
+
+SUCCESS_STATEMENT="Successfully built python package.\n"
+
+FAILED_STATEMENT="Failed building the python package!:\
+                    'python setup.py install' failed\n\
+                 "
+
+# building python command
+python setup.py install > "log/setup_$TIMESTAMP-pre-commit.log" 2>&1
+if [ $? -eq 1 ]; then
+    # print error statement
+    echo $FAILED_STATEMENT;
+    # updated log name to say that the operation failed
+    mv "log/setup_$TIMESTAMP-pre-commit.log" "log/setup_$TIMESTAMP-pre-commit-FAILED.log";
+    # exit 1 (continue even if building the package fails)
+else
+    echo $SUCCESS_STATEMENT
+fi
+
 #automatic document building
 sphinx-apidoc -f -o docs/source {{cookiecutter.project_name}}/
 cd docs
 make html
 
-# pre-commit
+#---perfrom the pytest---#
+python -m pytest || exit 1
+
+#---run pre-commits---#
 if [ -x "$INSTALL_PYTHON" ]; then
     exec "$INSTALL_PYTHON" -mpre_commit "${ARGS[@]}"
 elif command -v pre-commit > /dev/null; then
