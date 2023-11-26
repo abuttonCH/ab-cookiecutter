@@ -33,9 +33,9 @@ else
 fi
 
 #automatic document building
-sphinx-apidoc -f -o docs/source {{cookiecutter.project_name}}/
-cd docs
-make html
+#sphinx-apidoc -f -o docs/source {{cookiecutter.project_name}}/
+#cd docs
+#make html
 
 #---perfrom the pytest---#
 python -m pytest || exit 1
