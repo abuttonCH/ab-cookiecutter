@@ -1,5 +1,6 @@
 """Example sub function."""
 
+
 def sub_example_function() -> bool:
     """Return a True statement.
 

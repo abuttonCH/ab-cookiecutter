@@ -1,7 +1,0 @@
-testing_template
-================
-
-.. toctree::
-   :maxdepth: 4
-
-   testing_template
