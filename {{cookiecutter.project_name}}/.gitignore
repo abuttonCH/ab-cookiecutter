@@ -140,6 +140,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-# ignore README.md
-README.md
