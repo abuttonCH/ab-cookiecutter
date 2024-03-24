@@ -2,6 +2,7 @@
 outputs/
 data/
 private/
+test/.testlogs/*
 tests/test_output/
 docs/build
 
