@@ -32,6 +32,9 @@ src = "tests/__init__.py"
 src = "tests/test_{{cookiecutter.project_name}}.py"
 
 [[file]]
+src = "tests/.testlogs/__init__.py"
+
+[[file]]
 src = "{{cookiecutter.project_name}}/__init__.py"
 
 [[file]]
